@@ -15,7 +15,7 @@ public class CountingFunctionInRangeTest {
     public void testLinearFunction() {
         CountingFunctionInRange count = new CountingFunctionInRange();
         List<Double> check = Arrays.asList(0D, 2D, 4D, 6D, 8D, 10D, 12D, 14D, 16D);
-        List<Double> res = count.linear(0, 8);
+        List<Double> res = count.diapason(0, 8, (par) -> 2 * par);
         assertThat(res, is(check));
     }
 
@@ -23,7 +23,7 @@ public class CountingFunctionInRangeTest {
     public void testSquareFunction() {
         CountingFunctionInRange count = new CountingFunctionInRange();
         List<Double> check = Arrays.asList(0D, 1D, 4D, 9D, 16D, 25D);
-        List<Double> res = count.square(0, 5);
+        List<Double> res = count.diapason(0, 5, (par) -> par * par);
         assertThat(res, is(check));
     }
 
@@ -36,7 +36,7 @@ public class CountingFunctionInRangeTest {
         for (int i = start; i <= end; i++) {
             check.add(Math.log((double) i));
         }
-        List<Double> res = count.log(start, end);
+        List<Double> res = count.diapason(start, end, (par) -> Math.log(par));
         assertThat(res, is(check));
     }
 
