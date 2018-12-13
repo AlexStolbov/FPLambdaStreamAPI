@@ -9,11 +9,4 @@ public class ConvertMatrix2List {
         List<Integer> res = Arrays.stream(array).flatMap(array2 -> Arrays.stream(array2).boxed()).collect(Collectors.toList());
         return res;
     }
-
-    public static void main(String[] args) {
-        ConvertMatrix2List cm = new ConvertMatrix2List();
-        int[][] arr = {{1,2,3}, {456}};
-        List<Integer> ll = cm.toList(arr);
-    }
-
 }

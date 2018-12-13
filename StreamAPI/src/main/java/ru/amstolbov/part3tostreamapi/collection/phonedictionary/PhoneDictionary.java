@@ -1,4 +1,4 @@
-package ru.amstolbov.part3tostreamapi.collection.PhoneDictionary;
+package ru.amstolbov.part3tostreamapi.collection.phonedictionary;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +8,7 @@ public class PhoneDictionary {
     private List<Person> persons = new ArrayList<>();
 
     public void add(Person... persons) {
-        for(Person person : persons) {
+        for (Person person : persons) {
             this.persons.add(person);
         }
     }

@@ -1,4 +1,4 @@
-package ru.amstolbov.part3tostreamapi.collection.PhoneDictionary;
+package ru.amstolbov.part3tostreamapi.collection.phonedictionary;
 
 import org.junit.Test;
 
@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
 public class PhoneDictionaryTest {
 
     @Test
-    public void whenExistPersonThenFindIt(){
+    public void whenExistPersonThenFindIt() {
         PhoneDictionary phoneDictionary = new PhoneDictionary();
         Person personOne = new Person("Alex", "Ivanov", "123", "Russia");
         Person personTwo = new Person("Igor", "Ivanov", "12345", "Russia");

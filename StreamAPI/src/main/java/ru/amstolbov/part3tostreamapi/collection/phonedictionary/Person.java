@@ -1,4 +1,4 @@
-package ru.amstolbov.part3tostreamapi.collection.PhoneDictionary;
+package ru.amstolbov.part3tostreamapi.collection.phonedictionary;
 
 public class Person {
     private String name;
