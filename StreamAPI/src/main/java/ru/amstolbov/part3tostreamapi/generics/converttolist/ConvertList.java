@@ -11,7 +11,6 @@ public class ConvertList {
      * @return общий список элементов из массивов из list
      */
     public List<Integer> convert(List<int[]> list) {
-        List<Integer> res = list.stream().flatMap(arr -> Arrays.stream(arr).boxed()).collect(Collectors.toList());
-        return res;
+        return list.stream().flatMap(arr -> Arrays.stream(arr).boxed()).collect(Collectors.toList());
     }
 }

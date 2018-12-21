@@ -6,7 +6,6 @@ import java.util.stream.Collectors;
 
 public class UserConvert {
     public Map<Integer, User> process(List<User> list) {
-        Map<Integer, User> res = list.stream().collect(Collectors.toMap(User::getId, el -> el));
-        return res;
+        return list.stream().collect(Collectors.toMap(User::getId, el -> el));
     }
 }
